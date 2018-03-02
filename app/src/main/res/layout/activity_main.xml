@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BTConnectButton"
+        android:gravity="bottom"
+        android:text="선택된 기종 : 연결되지 않음"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/BTConnectButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/StartButton"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onBTConnectButtonClicked"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Bluetooth 연결하기"
+        android:background="@color/colorGray"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/StartButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorGray"
+        android:onClick="onStartButtonClicked"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Start"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorGrayLight"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        android:contentDescription="@drawable/e01"
+        app:srcCompat="@drawable/sfrc" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginEnd="132dp"
+        android:layout_marginTop="27dp"
+        android:text="사용가능 디바이스 : 1.5_OLED, 2.7_OLED, OLED_BAG"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

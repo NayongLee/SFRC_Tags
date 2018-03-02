@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.tagproject.tags.SecondActivity">
+
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보내기"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+        android:onClick="onsendButtonClicked"
+        android:textSize="25sp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@color/colorGray"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/sendButton">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:columnCount="2"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/check01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:checked="true"
+                    android:drawableEnd="@drawable/e01" />
+
+                <RadioButton
+                    android:id="@+id/check03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:checked="false"
+                    android:drawableEnd="@drawable/e03" />
+
+                <RadioButton
+                    android:id="@+id/check05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:drawableEnd="@drawable/e05" />
+
+                <RadioButton
+                    android:id="@+id/check07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:drawableEnd="@drawable/e07" />
+
+                <RadioButton
+                    android:id="@+id/check09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:drawableEnd="@drawable/e09" />
+
+                <RadioButton
+                    android:id="@+id/check11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:text="   이미지\n 모두 보기"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp">
+
+                <RadioButton
+                    android:id="@+id/check02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:drawableEnd="@drawable/e02" />
+
+                <RadioButton
+                    android:id="@+id/check04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:drawableEnd="@drawable/e04" />
+
+                <RadioButton
+                    android:id="@+id/check06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:drawableEnd="@drawable/e06" />
+
+                <RadioButton
+                    android:id="@+id/check08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:drawableEnd="@drawable/e08" />
+
+                <RadioButton
+                    android:id="@+id/check10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:buttonTint="@drawable/radio_button_checked"
+                    android:drawableEnd="@drawable/e10" />
+            </RadioGroup>
+
+
+        </GridLayout>
+    </ScrollView>
+
+</RelativeLayout>
